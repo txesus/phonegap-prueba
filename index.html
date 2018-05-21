@@ -198,5 +198,11 @@
     <script src="js/bootstrap.min.js" charset="utf-8"></script>
     <script src="js/own.js" charset="utf-8"></script>
     <script src="js/navbar.js" charset="utf-8"></script>
+    <script>
+      document.addEventListener("deviceready", onDeviceReady, false);
+      function onDeviceReady() {
+          console.log(navigator.camera);
+      }
+    </script>
   </body>
   </html>
