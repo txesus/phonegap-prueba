@@ -16,5 +16,7 @@
   <author href="https://github.com/txesus" email="jesusestebansanchez@gmail.com">
       Hardeep Shoker
   </author>
+  
+  <plugin name="cordova-plugin-camera" spec="4.0.3" />
 
 </widget>
