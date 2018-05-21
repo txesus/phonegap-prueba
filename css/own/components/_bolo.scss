@@ -1,0 +1,17 @@
+.bolo{
+  display: none;
+}
+@media (min-width: 992px){
+
+  .bolo{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .bolo-image{
+    width: 45%;
+    margin-top: 94px;
+    margin-right: 0px;
+  }
+}

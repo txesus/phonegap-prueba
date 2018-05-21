@@ -1,0 +1,85 @@
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+@media (min-width: 360px) {
+  body{
+    font-family: $main-font;
+    background-color: #2a2a29;
+  }
+
+  h1{
+    font-family: $title-font;
+  }
+  .main-font{
+    font-family: $main-font;
+  }
+  .title-font{
+    font-family: $title-font;
+  }
+  .text-extra{
+    font-size: $text-extra;
+  }
+  .text-xxl{
+    font-size: $text-xxl;
+  }
+  .text-xl{
+    font-size: $text-xl;
+  }
+  .text-l{
+    font-size: $text-l;
+  }
+  .text-m{
+    font-size: $text-m;
+  }
+  .text-s{
+    font-size: $text-s;
+  }
+  .text-xs{
+    font-size: $text-xs;
+  }
+
+  .right{
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  .main-color{
+    color: $bg-primary;
+  }
+  .white{
+    color:white;
+    & a{
+      color:white;
+    }
+    & a:hover{
+      color:white;
+      font-weight: bold;
+    }
+    & a:visited{
+      color:rgb(194, 194, 189);
+    }
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  body{
+    background-image: url("../../images/fondo-bn.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: -10px -90px;
+    background-size: 90%;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }

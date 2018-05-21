@@ -1,0 +1,40 @@
+@mixin button-own {
+  width: 100px;
+  height: 30px;
+  font-family: $title-font;
+  letter-spacing: 2px;
+  background-color: #66cc33;
+  border: none;
+  outline: none;
+  color: white;
+  transition: 0.75s linear;
+  &:hover{
+    background-color: #43911c;
+  }
+}
+
+.button-own-face{
+  @include button-own ;
+  width: 100px;
+}
+.close{
+  opacity: 1;
+}
+.call-me-button{
+  @include button-own;
+  width: 100%;
+}
+.view-extend-info-button{
+  @include button-own;
+  width: 75%;
+}
+.extend-info-button{
+  @include button-own;
+  width: 100%;
+}
+
+@media (min-width: 992px){
+  .extend-info-button{
+    width: 60%;
+  }
+}

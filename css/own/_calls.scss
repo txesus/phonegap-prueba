@@ -1,0 +1,99 @@
+.calls{
+width: 80%;
+& p{
+  margin: 0;
+}
+}
+
+.info-no-commitments{
+  font-size: $text-m;
+}
+
+.call-us{
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.call-arrow{
+  text-align: center;
+  color: white;
+}
+
+.bigger{
+  font-size: $text-xl;
+  font-weight: lighter;
+}
+///
+.calls-form{
+  background-color: transparent;
+  padding: 20px;
+  & a{
+    text-decoration: underline;
+  }
+}
+.input-form{
+  padding: 10px;
+}
+.well {
+  min-height: 20px;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: none;
+  border: 1px solid white;
+  border-radius: 0;
+}
+.checkbox{
+  padding-left: 20px; // Modiefied Bootstrap default
+}
+///  RESPONSIVE  ///
+
+@media (min-width: 768px){
+  .calls{
+    width: 40%;
+    margin-right: auto;
+  }
+}
+@media (min-width: 992px){
+  .calls{
+    width: 30%;
+    display: flex;
+    margin-right: 7%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .call-us{
+    width: 75%;
+    padding: 5px 0;
+  }
+  .call-us p{
+    margin-top: -5px;
+    margin-bottom: -5px;
+    padding: 5px;
+  }
+  .info-no-commitments{
+    font-size: $text-xl;
+    margin: 0;
+  }
+  .calls-form{
+    width: 80%;
+    padding: 0;
+    border: 3px solid white;
+    }
+    .we-call{
+      width: 100%;
+      height: 80px;
+      //border-bottom: 2px solid white;
+      font-size: $text-xl;
+      text-align: center;
+      background-image: url("../../images/white-border.png");
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: -20px;
+    }
+    .own-input, .call-me-button{
+      width: 100%;
+    }
+
+}
