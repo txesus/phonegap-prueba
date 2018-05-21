@@ -16,7 +16,7 @@
 
     <header class="header-container container-fluid ">
       <div class="logo-container">
-        <img class="logo" src="images/logo.png" alt="MasMovil logo">
+        <img class="logo" src="images/logo.png" alt="MasMovil logo" id="myImage">
         <p class="sub-logo"> Distribuidor autorizado </p>
       </div>
       <div class="nav-div">
@@ -34,7 +34,6 @@
 
     <!--    PROMOS INFO   -->
     <section class="info">
-      <a href="#">Abrir cámara</a>
       <!-- VISIBLE PROMO -->
       <section class="promo-mov-int-fij">
         <div class="mov-int-fij-title">
@@ -200,9 +199,20 @@
     <script src="js/navbar.js" charset="utf-8"></script>
     <script>
       document.addEventListener("deviceready", onDeviceReady, false);
-      function onDeviceReady() {
-          console.log(navigator.camera);
-      }
+        function onDeviceReady() {
+          var cameraOptions = {
+            quality: 100
+          };
+          navigator.camera.getPicture(cameraSuccess, cameraError, cameraOptions);
+
+          function cameraCallback(imageData) {
+             var image = document.getElementById('myImage');
+             image.src = "data:image/jpeg;base64," + imageData;
+          }
+          function cameraError(){
+            console.error('error', err);
+          }
+        }
     </script>
   </body>
   </html>
