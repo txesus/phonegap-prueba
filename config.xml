@@ -17,6 +17,6 @@
       Hardeep Shoker
   </author>
   
-  <plugin name="cordova-plugin-camera" spec="4.0.3" />
+  <plugin name="cordova-plugin-camera" />
 
 </widget>
