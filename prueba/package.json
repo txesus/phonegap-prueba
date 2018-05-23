@@ -1,12 +1,40 @@
 {
-    "name": "helloworld",
-    "displayName": "HelloCordova",
-    "version": "1.0.0",
-    "description": "A sample Apache Cordova application that responds to the deviceready event.",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "helloworld",
+  "displayName": "HelloCordova",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-android": "^7.0.0",
+    "cordova-browser": "^5.0.3",
+    "cordova-ios": "^4.5.4",
+    "cordova-plugin-camera": "^4.0.3",
+    "cordova-plugin-file": "^6.0.1",
+    "cordova-plugin-firebase": "^1.0.5",
+    "cordova-plugin-geolocation": "^4.0.1",
+    "cordova-plugin-media-capture": "^3.0.2",
+    "cordova-plugin-touch-id": "^3.3.1",
+    "onsenui": "^2.10.0"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-firebase": {},
+      "cordova-plugin-camera": {},
+      "cordova-plugin-touch-id": {
+        "FACEID_USAGE_DESCRIPTION": " "
+      },
+      "cordova-plugin-media-capture": {}
     },
-    "author": "Apache Cordova Team",
-    "license": "Apache-2.0"
+    "platforms": [
+      "browser",
+      "android",
+      "ios"
+    ]
+  }
 }
